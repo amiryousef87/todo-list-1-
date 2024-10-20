@@ -1,106 +1,56 @@
-body {
-  background-color: #000;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-.App {
-  padding: 20px;
-}
-
-h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.input-container {
-  margin-bottom: 20px;
-  display: flex;  
-  align-items: center;
-  justify-content: center;
-}
-
-.task-input {
-  padding: 10px;
-  width: 300px;
-  border: none;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-
-.add-button {
-  padding: 10px 15px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-} 
- .add-button:hover {
-  background-color: #45a049;
-}
-
-.task-list {
-  margin-top: 20px;
-}
-
-.task-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  margin: 5px 0;
-  padding: 10px;
-  border-radius: 5px;
-}
-.delete-button {
-  background-color: red;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-right: 10px;
-}
-.Edit-button {
-  background-color: rgb(0, 89, 255);
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-right: 10px;
-}
-.delete-button:hover {
-  background-color: hsl(18, 91, 228);
-}
-
-.delete-button:hover {
-  background-color: darkred;
-}
-.EditanDelete {
-  float: right;
-  position: relative;
-  right: 30px;
-
-}
-.bot {  
-  display: flex;  
-  gap: 10px; 
+/* index.css */  
+body {  
+  background-color: black; /* رنگ پس‌زمینه سیاه */  
+  margin: 0; /* حذف حاشیه‌های پیش‌فرض */  
 }  
-.save-button {  
-  background-color: #45a049; 
-  padding: 10px 15px; 
+
+input {  
+  color: white; /* رنگ متن فیلد ورودی به سفید */  
+  background-color: black; /* رنگ پس‌زمینه فیلد ورودی به سیاه */  
+}  
+
+.task-text {  
+  color: white; /* رنگ متن تسک‌ها به سفید */  
+  transition: color 0.3s; /* افزودن انتقال رنگ */  
+}  
+
+.task-hover {  
+  color: green !important; /* رنگ هنگام hover به سبز */  
+}  
+
+.list-item {  
+  background-color: #444; /* رنگ پس‌زمینه تسک‌ها */  
+  transition: background-color 0.3s; /* افزودن انتقال رنگ */  
+}  
+
+.list-item:hover {  
+  background-color: #555; /* تغییر رنگ پس‌زمینه هنگام hover */  
+}  
+
+.delete-icon {  
   color: white;  
-  border: none; 
-  border-radius: 5px; 
-  cursor: pointer; 
-  margin-left: 8px;
+  transition: color 0.3s; /* افزودن انتقال رنگ برای آیکون حذف */  
 }  
-.error-message {  
-  color: red;
-  margin-top: 10px; 
+
+.delete-icon:hover {  
+  color: red; /* رنگ آیکون سطل زباله هنگام hover به قرمز */  
+}
+/* index.css */  
+.task-text {  
+  color: white; /* رنگ متن تسک‌ها به سفید */  
+  transition: color 0.3s; /* افزودن انتقال رنگ */  
 }  
+
+/* .list-item:hover .task-text {  
+  color: green; /* تغییر رنگ متن تسک به سبز هنگام hover */  
+  */
+
+.list-item {  
+  background-color: #444; /* رنگ پس‌زمینه تسک‌ها */  
+  transition: background-color 0.3s; /* افزودن انتقال رنگ */  
+}  
+
+.list-item:hover {  
+  background-color: #555; /* تغییر رنگ پس‌زمینه هنگام hover */  
+}  
+
